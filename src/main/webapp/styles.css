@@ -1,0 +1,128 @@
+/* Additional Styles for Advanced Text Analysis Tool */
+
+.loading {
+    display: none;
+    margin-top: 20px;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.feature-box {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.feature-box h3 {
+    color: #4db6e6;
+    margin-top: 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background-color: #4a4a4a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid #4db6e6;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4db6e6;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #b0b0b0;
+    margin-top: 5px;
+}
+
+/* Team Section Styling */
+.team-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.team-section h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.member {
+    font-weight: 600;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.member:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-members {
+        font-size: 1em;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .member {
+        margin: 2px 0;
+    }
+}
